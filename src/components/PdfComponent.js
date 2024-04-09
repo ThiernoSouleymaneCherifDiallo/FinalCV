@@ -134,7 +134,7 @@ function PdfComponent() {
                 <span className="font-thin m-0">{name[1]}</span>
                 <p>{profile.tagline}</p>
                   <p className="m-0"><HiOfficeBuilding size={20}/> {profile.position}</p>
-                  <p><HiLocationMarker size={20}/> {profile.location}</p>
+                  <p><HiLocationMarker size={20}/> profil.name</p>
                 
               </Stack>
               <br></br>
@@ -202,9 +202,7 @@ function PdfComponent() {
                       </div>
                     )
                   })
-                }
-                
-                
+                }              
               </div>
             </div>
 
