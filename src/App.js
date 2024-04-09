@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 import Resume from './components/Resume';
 import PdfComponent from './components/PdfComponent';
 import PdfComponentSecondModele from './components/PdfComponentSecondModele';
-import PdfComponent3 from './components/PdfComponent3';
+import PdfComponent3 from './components/pdfcomponent3/PdfComponent3';
 
 function App() {
   return (

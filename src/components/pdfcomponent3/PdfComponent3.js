@@ -1,3 +1,4 @@
+import './style.css'
 import React, { Fragment } from 'react'
 import { Stack } from 'react-bootstrap'
 import { BsLinkedin, BsGithub, BsGlobe } from 'react-icons/bs'
@@ -7,6 +8,7 @@ import jsPDF from 'jspdf';
 import html2canvas from "html2canvas";
 import axios from 'axios';
 import { saveAs } from 'file-saver';
+
 
 import { useSelector } from 'react-redux';
 
