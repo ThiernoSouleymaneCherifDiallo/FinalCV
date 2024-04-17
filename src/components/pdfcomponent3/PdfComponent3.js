@@ -24,7 +24,7 @@ function PdfComponent3() {
 
   const createAndDownloadPdf = () => {
     const data = {
-      profile: profile,
+      previewofile: previewofile,
       name: name,
       file: file,
       about: about,
@@ -251,8 +251,6 @@ function PdfComponent3() {
           <div><b>Voyage</b></div>
         </div>
       </section>
-
-
       <div className="srkl">
 
       </div>

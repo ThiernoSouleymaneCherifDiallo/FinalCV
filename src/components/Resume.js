@@ -30,6 +30,8 @@ function Resume() {
           <NavLink className="nav-link align-middle bg-dark text-white p-2 rounded" style={{width:"200px"}} to="/preview1">Preview 1</NavLink>
           <NavLink className="nav-link align-middle bg-dark text-white p-2 rounded" to="/preview2">Preview 2</NavLink>
           <NavLink className="nav-link align-middle bg-dark text-white p-2 rounded" to="/preview3">Preview 3</NavLink>
+          {/* <NavLink className="nav-link align-middle bg-dark text-white p-2 rounded" to="/preview4">Preview 4</NavLink> */}
+          <NavLink className="nav-link align-middle bg-dark text-white p-2 rounded" to="/preview5">Preview 5</NavLink>
         </div>
 
       </Container>
