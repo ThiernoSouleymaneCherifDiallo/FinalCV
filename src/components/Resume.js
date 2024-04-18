@@ -27,11 +27,9 @@ function Resume() {
         <p style={{textAlign:"center", textweigth:"bold"}}>Veillez visionner les 3 modeles avant de télécharger ce qui vous convient</p>
 
         <div className="d-grid col-3 mx-auto my-4 text-center d-flex gap-5 ">
-          <NavLink className="nav-link align-middle bg-dark text-white p-2 rounded" style={{width:"200px"}} to="/preview1">Preview 1</NavLink>
-          <NavLink className="nav-link align-middle bg-dark text-white p-2 rounded" to="/preview2">Preview 2</NavLink>
-          <NavLink className="nav-link align-middle bg-dark text-white p-2 rounded" to="/preview3">Preview 3</NavLink>
-          {/* <NavLink className="nav-link align-middle bg-dark text-white p-2 rounded" to="/preview4">Preview 4</NavLink> */}
-          <NavLink className="nav-link align-middle bg-dark text-white p-2 rounded" to="/preview5">Preview 5</NavLink>
+          <NavLink className="nav-link align-middle bg-dark text-white p-2 rounded" style={{width:"200px"}} to="/preview1">Modèle 1</NavLink>
+          <NavLink className="nav-link align-middle bg-dark text-white p-2 rounded" to="/preview2">Modèle 2</NavLink>
+          <NavLink className="nav-link align-middle bg-dark text-white p-2 rounded" to="/preview5">Modèle 3</NavLink>
         </div>
 
       </Container>

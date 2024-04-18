@@ -116,8 +116,7 @@ function PdfComponent() {
   return (
     <Fragment>
       <div className="d-grid col-2 mx-auto mt-4">
-          <button className="nav-link align-middle bg-dark text-white p-2 rounded" onClick={printDocument}>Download</button>
-          <button className="nav-link align-middle bg-dark text-white p-2 rounded mt-2" onClick={createAndDownloadPdf}>Download Version 2.0</button>
+          <button className="nav-link align-middle bg-dark text-white p-2 rounded" onClick={printDocument}>Télécharger</button>
       </div>
       <div className="container d-flex justify-content-center p-4">
 
@@ -131,10 +130,13 @@ function PdfComponent() {
 
               <Stack className="text-center">
                 <span className="font-bold m-0 firstname">{name[0]}</span>
-                <span className="font-thin m-0">{name[1]}</span>
+                <span className="font-bold m-0">{name[1]}</span>
+                <span className="font-bold m-0">{name[2]}</span>
+                <span className="font-bold m-0">{name[3]}</span>
+                <span className="font-bold m-0">{name[4]}</span>
                 <p>{profile.tagline}</p>
-                  <p className="m-0"><HiOfficeBuilding size={20}/> {profile.position}</p>
-                  <p><HiLocationMarker size={20}/> profil.name</p>
+                  <p className="m-0"><HiOfficeBuilding size={20}/> {profile.location}</p>
+                  <p><HiLocationMarker size={20}/> {profile.position} </p>
                 
               </Stack>
               <br></br>
@@ -142,7 +144,7 @@ function PdfComponent() {
 
               <br></br>
               <Stack className="p-3">
-                <h4 className="title">Skills</h4>
+                <h4 className="title">Competences</h4>
                 <div className="d-flex flex-wrap">
                 {
                   skills.map((items, id) => {
@@ -159,7 +161,7 @@ function PdfComponent() {
           <div className="d-flex align-items-center col-md-7 p-0 py-4">
             <div>
               <div className="px-4 py-1">
-                <h4 className="title">About Me</h4>
+                <h4 className="title">A propos de moi</h4>
                 <p className="text-break">
                     {about}
                 </p>
@@ -197,7 +199,7 @@ function PdfComponent() {
                         <div className="px-3">
                           <h4>{item.institute}</h4>
                           <p className="m-0">{item.degree} • {item.fieldOfStudy}</p>
-                          <p>{item.startYear} - {item.endYear} • Grade: {item.grade}</p>
+                          <p>{item.startYear} - {item.endYear} • Niveau: {item.grade}</p>
                         </div>
                       </div>
                     )

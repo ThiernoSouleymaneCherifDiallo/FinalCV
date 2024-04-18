@@ -116,8 +116,7 @@ function PdfComponentSecondModele() {
   return (
     <Fragment>
       <div className="d-grid col-2 mx-auto mt-4">
-        <button className="nav-link align-middle bg-dark text-white p-2 rounded" onClick={printDocument}>Download</button>
-        <button className="nav-link align-middle bg-dark text-white p-2 rounded mt-2" onClick={createAndDownloadPdf}>Download Version 2.0</button>
+        <button className="nav-link align-middle bg-dark text-white p-2 rounded" onClick={printDocument}>Télécharger</button>
       </div>
       <div className="container d-flex justify-content-center p-4">
 
@@ -130,7 +129,7 @@ function PdfComponentSecondModele() {
             <div className="resume_content">
               <div className="resume_item resume_info">
                 <div className="title">
-                  <p className="bold">{name[0]}  {name[1]}</p>
+                  <p className="bold">{name[0]}  {name[1]} {name[2]} {name[3]} {name[4]}</p>
                   <p className="regular">{profile.location}</p>
                 </div>
                 <ul>
@@ -162,7 +161,7 @@ function PdfComponentSecondModele() {
               </div>
               <div className="resume_item resume_skills">
                 <div className="title">
-                  <p className="bold">skill's</p>
+                  <p className="bold">Competences</p>
                 </div>
                 <ul>
                   <li>
@@ -182,7 +181,7 @@ function PdfComponentSecondModele() {
               </div>
               <div className="resume_item resume_social">
                 <div className="title">
-                  <p className="bold">Social</p>
+                  <p className="bold">Sociale</p>
                 </div>
                 <GetLinks />
               </div>
@@ -239,7 +238,7 @@ function PdfComponentSecondModele() {
                             <div className="px-3">
                               <h4>{item.institute}</h4>
                               <p className="m-0">{item.degree} • {item.fieldOfStudy}</p>
-                              <p>{item.startYear} - {item.endYear} • Grade: {item.grade}</p>
+                              <p>{item.startYear} - {item.endYear} • Niveau: {item.grade}</p>
                             </div>
                           </div>
                         )
