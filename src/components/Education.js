@@ -130,7 +130,7 @@ function Education() {
                   <div className="px-3">
                     <h5 className="m-0">{item.institute}</h5>
                     <p className="text-muted m-0">{item.degree} • {item.fieldOfStudy}</p>
-                    <p className="text-muted">{item.startYear} - {item.endYear} • Grade: {item.grade}</p>
+                    <p className="text-muted">{item.startYear} - {item.endYear} • Niveau: {item.grade}</p>
                   </div>
 
                 </Col>
@@ -157,22 +157,22 @@ function Education() {
         <Modal.Body>
           <Form noValidate validated={validated} onSubmit={handleSubmit}>
             <Form.Group className="mb-3">
-              <Form.Label>School / College</Form.Label>
-              <Form.Control required type="text" name="institute" size="sm" placeholder="Ex: Government Engineering College" value={form.institute} onChange={handleForm} />
+              <Form.Label>Etablissement</Form.Label>
+              <Form.Control required type="text" name="institute" size="sm" placeholder="Ex: Gandhi" value={form.institute} onChange={handleForm} />
             </Form.Group>
             <Form.Group className="mb-3">
-              <Form.Label>Degree</Form.Label>
-              <Form.Control required type="text" name="degree" size="sm" placeholder="Ex: Bachelor of Engineering" value={form.degree} onChange={handleForm} />
+              <Form.Label>Niveau</Form.Label>
+              <Form.Control required type="text" name="degree" size="sm" placeholder="Ex: Baccalauréat en ingénierie" value={form.degree} onChange={handleForm} />
             </Form.Group>
             <Form.Group className="mb-3">
-              <Form.Label>Field of study</Form.Label>
-              <Form.Control required type="text" name="fieldOfStudy" size="sm" placeholder="Ex: Computer Engineering" value={form.fieldOfStudy} onChange={handleForm} />
+              <Form.Label>Option</Form.Label>
+              <Form.Control required type="text" name="fieldOfStudy" size="sm" placeholder="Ex: Informatique" value={form.fieldOfStudy} onChange={handleForm} />
             </Form.Group>
             <Form.Group className="mb-3">
               <Row>
                 <Col>
                   <Row>
-                    <Form.Label>Start - Year</Form.Label>
+                    <Form.Label>Année de début</Form.Label>
                   </Row>
                   <Row>
                     <Col>
@@ -187,7 +187,7 @@ function Education() {
 
                     <Col>
                       <Row>
-                        <Form.Label>End - Year</Form.Label>
+                        <Form.Label>Année de fin</Form.Label>
                       </Row>
                       <Row>
                         <Col>
@@ -209,11 +209,11 @@ function Education() {
 
             </Form.Group>
             <Form.Group className="mb-3">
-              <Form.Label>Grade</Form.Label>
+              <Form.Label>Niveau</Form.Label>
               <Form.Control required type="text" name="grade" size="sm" placeholder="Ex: 8.5/10 CGPA" value={form.grade} onChange={handleForm} />
             </Form.Group>
             <button type="submit" className="rounded edit px-2">
-              Save Changes
+              Enregistrer les modifications
             </button>
 
           </Form>
@@ -221,7 +221,7 @@ function Education() {
       </Modal>
       <Modal show={Alert} onHide={handleAlertClose} className="text-center" size="sm" centered>
         <Modal.Body>
-          <h4>Are you sure ?</h4>
+          <h4>Êtes vous sûr ?</h4>
           <ImCheckmark size={30} className="rounded edit" onClick={() => { handleDelete(deleteId) }} />
           <ImCross size={25} className="rounded edit" onClick={handleAlertClose} />
         </Modal.Body>

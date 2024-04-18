@@ -165,21 +165,22 @@ function Experience() {
         <Modal.Body>
           <Form noValidate validated={validated} onSubmit={handleSubmit}>
             <Form.Group className="mb-3">
-              <Form.Label>Title</Form.Label>
+              <Form.Label>Titre</Form.Label>
               <Form.Control required type="text" size="sm" placeholder="Ex: React Developer" name="title" value={form.title} onChange={handleForm} />
             </Form.Group>
             <Form.Group className="mb-3">
-              <Form.Label>Company Name</Form.Label>
+              <Form.Label>Nom de l'entreprise</Form.Label>
               <Form.Control required type="text" size="sm" placeholder="Ex: Amazon" name="company" value={form.company} onChange={handleForm} />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicCheckbox">
-              <Form.Check type="checkbox" label="I am currently working in this role" name="isWorking" checked={form.isWorking} onChange={handleForm} />
+              <Form.Check type="checkbox" label="
+Je travaille actuellement dans ce rôle." name="isWorking" checked={form.isWorking} onChange={handleForm} />
             </Form.Group>
             <Form.Group className="mb-3">
               <Row>
                 <Col>
                   <Row>
-                    <Form.Label>Start Month - Year</Form.Label>
+                    <Form.Label>Mois - Année de debut</Form.Label>
                   </Row>
                   <Row>
                     <Col>
@@ -199,7 +200,7 @@ function Experience() {
 
                     <Col>
                       <Row>
-                        <Form.Label>End Month - Year</Form.Label>
+                        <Form.Label>Mois - Année de fin</Form.Label>
                       </Row>
                       <Row>
                         <Col>
@@ -226,15 +227,15 @@ function Experience() {
 
             </Form.Group>
             <Form.Group className="mb-3">
-              <Form.Label>Location</Form.Label>
+              <Form.Label>Emplacement</Form.Label>
               <Form.Control required type="text" size="sm" placeholder="Ex: Pune, India" name="location" value={form.location} onChange={handleForm} />
             </Form.Group>
             <Form.Group className="mb-3">
               <Form.Label>Description</Form.Label>
-              <Form.Control required type="text" size="sm" placeholder="Ex: Worked as a Front-End Developer" name="description" value={form.description} onChange={handleForm} />
+              <Form.Control required type="text" size="sm" placeholder="Ex: a travaillé en tant que développeur Front-End." name="description" value={form.description} onChange={handleForm} />
             </Form.Group>
             <button type="submit" className="rounded edit px-2">
-              Save Changes
+              Enregistrer les modifications
             </button>
 
           </Form>
@@ -243,7 +244,7 @@ function Experience() {
       </Modal>
       <Modal show={Alert} onHide={handleAlertClose} className="text-center" size="sm" centered>
         <Modal.Body>
-          <h4>Are you sure ?</h4>
+          <h4>Êtes vous sûr ?</h4>
           <ImCheckmark size={30} className="rounded edit" onClick={() => {handleDelete(deleteId)}}/>
           <ImCross size={25} className="rounded edit" onClick={handleAlertClose} />
         </Modal.Body>

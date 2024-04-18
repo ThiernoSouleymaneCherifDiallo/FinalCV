@@ -92,35 +92,35 @@ function Profile() {
                 <p className="p-1 m-0" onClick={()=>handleAlertShow("GitHub Profile",profile.github)}><BsGithub size={30} className="p-1"/>GitHub</p>
                 <p className="p-1 m-0" onClick={()=>handleAlertShow("Portfolio",profile.website)}><BsGlobe size={30} className="p-1"/>Portfolio</p>
                 <p className="p-1 m-0" onClick={()=>handleAlertShow("Email Address",profile.email)}><HiOutlineMail size={30} className="p-1"/>Email</p>
-                <p className="p-1 m-0" onClick={()=>handleAlertShow("Contact Number",profile.contact)}><HiPhone size={30} className="p-1"/>Contact Number</p>
+                <p className="p-1 m-0" onClick={()=>handleAlertShow("Contact Number",profile.contact)}><HiPhone size={30} className="p-1"/>Contact</p>
             </Col>
             
         </Row>
         <Modal show={show} onHide={handleClose} centered backdrop="static">
             <Modal.Header>
-                <Modal.Title>Profile Details</Modal.Title>
+                <Modal.Title>Détails du profile</Modal.Title>
                 <MdClose size={30} className="rounded edit" onClick={handleClose}/>
             </Modal.Header>
 
             <Modal.Body>
                 <Form>
                     <Form.Group className="mb-3">
-                        <Form.Control type="text" name="name" size="sm" placeholder="Your Name" value={profile.name} onChange={handleProfile}/>
+                        <Form.Control type="text" name="name" size="sm" placeholder="Votre Nom" value={profile.name} onChange={handleProfile}/>
                     </Form.Group>
                     <Form.Group className="mb-3">
-                        <Form.Control type="text" name="location" size="sm" placeholder="City, Country" value={profile.location} onChange={handleProfile}/>
+                        <Form.Control type="text" name="location" size="sm" placeholder="Ville, Pays" value={profile.location} onChange={handleProfile}/>
                     </Form.Group>
                     <Form.Group className="mb-3">
-                        <Form.Control type="text" name="position" size="sm" placeholder="Your Position" value={profile.position} onChange={handleProfile}/>
+                        <Form.Control type="text" name="position" size="sm" placeholder="Votre Position" value={profile.position} onChange={handleProfile}/>
                     </Form.Group>
                     <Form.Group className="mb-3">
-                        <Form.Control type="text" name="tagline" size="sm" placeholder="Describe yourself in one line" value={profile.tagline} onChange={handleProfile}/>
+                        <Form.Control type="text" name="tagline" size="sm" placeholder="Decrivez vous en une ligne" value={profile.tagline} onChange={handleProfile}/>
                     </Form.Group>
                     <Form.Group className="mb-3">
-                        <Form.Control type="email" name="email" size="sm" placeholder="Email Address" value={profile.email} onChange={handleProfile}/>
+                        <Form.Control type="email" name="email" size="sm" placeholder="Addresse mail" value={profile.email} onChange={handleProfile}/>
                     </Form.Group>
                     <Form.Group className="mb-3">
-                        <Form.Control type="number" name="contact" size="sm" placeholder="Contact Number" value={profile.contact} onChange={handleProfile}/>
+                        <Form.Control type="number" name="contact" size="sm" placeholder="Contact" value={profile.contact} onChange={handleProfile}/>
                     </Form.Group>
                     <Form.Group className="mb-3">
                         <Form.Control type="text" name="github" size="sm" placeholder="GitHub Profile" value={profile.github} onChange={handleProfile}/>
@@ -129,10 +129,10 @@ function Profile() {
                         <Form.Control type="text" name="linkedin" size="sm" placeholder="LinkedIn Profile" value={profile.linkedin} onChange={handleProfile}/>
                     </Form.Group>
                     <Form.Group className="mb-3">
-                        <Form.Control type="text" name="website" size="sm" placeholder="Your Portfolio Website" value={profile.website} onChange={handleProfile}/>
+                        <Form.Control type="text" name="website" size="sm" placeholder="Votre Portfolio" value={profile.website} onChange={handleProfile}/>
                     </Form.Group>
                     <Form.Group controlId="formFileSm" className="mb-3">
-                        <Form.Label>Profile Picture</Form.Label>
+                        <Form.Label>Photo Profile</Form.Label>
                         <Form.Control type="file" size="sm" onChange={handleFile}/>
                     </Form.Group>
                 </Form>
@@ -140,7 +140,7 @@ function Profile() {
 
             <Modal.Footer>
                 <button type="submit" className="rounded edit px-2" onClick={handleClose}>
-                    Save Changes
+                    Enregistrer les modifications
                 </button>
             </Modal.Footer>
         </Modal>

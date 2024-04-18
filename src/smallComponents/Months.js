@@ -3,19 +3,19 @@ import React, { Fragment } from "react";
 function Months() {
   return (
     <Fragment>
-      <option value="">Month</option>
-      <option value="January">January</option>
-      <option value="February">February</option>
-      <option value="March">March</option>
-      <option value="April">April</option>
-      <option value="May">May</option>
-      <option value="June">June</option>
-      <option value="July">July</option>
-      <option value="August">August</option>
-      <option value="September">September</option>
-      <option value="October">October</option>
-      <option value="November">November</option>
-      <option value="December">December</option>
+      <option value="">Mois</option>
+      <option value="January">Janvier</option>
+      <option value="February">Février</option>
+      <option value="March">Mars</option>
+      <option value="April">Avril</option>
+      <option value="May">Mai</option>
+      <option value="June">Juin</option>
+      <option value="July">Juillet</option>
+      <option value="August">Août</option>
+      <option value="September">Septembre</option>
+      <option value="October">Octobre</option>
+      <option value="November">Novembre</option>
+      <option value="December">Decembre</option>
     </Fragment>
   );
 }

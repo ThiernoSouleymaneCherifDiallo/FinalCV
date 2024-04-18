@@ -268,9 +268,9 @@ export default function PdfComponent4() {
                 document.getElementById('image').click()} src="jalikatou.jpg" alt="" />
               <input hidden type="file" id='image' onChange={changePhoto} />
               <span className="name" contentEditable="true">
-                YOUR
+                VOTRE
               </span>{" "}
-              <span contentEditable="true">NAME</span>
+              <span contentEditable="true">NOM</span>
               <div className="post" contentEditable="true">
                 YOUR JOB PROFILE
               </div>
@@ -314,7 +314,7 @@ export default function PdfComponent4() {
       {/* <div className="line" > */}
       <div className="mainbody">
         <div className="leftside">
-          <span className="title">MY SKILLS</span>
+          <span className="title">Mes Compétences</span>
           <br />
           <br />
           <div>
@@ -325,7 +325,7 @@ export default function PdfComponent4() {
               <span>
                 <i className="fas fa-chevron-circle-right" />
               </span>{" "}
-              <span contentEditable="true">write your skill here</span>
+              <span contentEditable="true">Mettre vos compétences ici</span>
             </div>
             <div id="skills" />
               {affiche ? <div className="dynamiquebtns">
@@ -335,7 +335,7 @@ export default function PdfComponent4() {
                 className="btn btn-success"
                 onClick={addskill}
                 >
-                <i className="fas fa-plus-circle" /> Skill
+                <i className="fas fa-plus-circle" /> Competence
               </button>
               <button
                 id="skillrem"
@@ -343,13 +343,13 @@ export default function PdfComponent4() {
                 className="btn btn-danger"
                 onClick={(e) => remskill(e)}
                 >
-                <i className="fas fa-minus-circle" /> Skill
+                <i className="fas fa-minus-circle" /> Compétence
               </button>
             </div> : undefined}
           </div>
           <br />
           <br />
-          <span className="title">LANGUAGES</span>
+          <span className="title">LANGUES</span>
           <br />
           <br />
           <div>
@@ -357,8 +357,8 @@ export default function PdfComponent4() {
               <span>
                 <input type="checkbox" className="input-checkbox" />
               </span>
-              <span contentEditable="true">LANGNAME</span> -{" "}
-              <span contentEditable="true">level u know</span>
+              <span contentEditable="true">Nom de langue</span> -{" "}
+              <span contentEditable="true">Votre niveau</span>
             </div>
             <div id="languages" />
 
@@ -369,7 +369,7 @@ export default function PdfComponent4() {
                 className="btn btn-success"
                 onClick={addLang}
                 >
-                <i className="fas fa-plus-circle" /> Language
+                <i className="fas fa-plus-circle" /> Langue
               </button>
               <button
                 id="langrem"
@@ -377,7 +377,7 @@ export default function PdfComponent4() {
                 className="btn btn-danger"
                 onClick={(e) => remLang(e)}
                 >
-                <i className="fas fa-minus-circle" /> Language
+                <i className="fas fa-minus-circle" /> Langue
               </button>
               </div> : undefined
 
