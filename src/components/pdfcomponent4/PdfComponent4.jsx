@@ -268,7 +268,7 @@ export default function PdfComponent4() {
                 document.getElementById('image').click()} src="jalikatou.jpg" alt="" />
               <input hidden type="file" id='image' onChange={changePhoto} />
               <span className="name" contentEditable="true">
-                YOUR
+                VOTRE
               </span>{" "}
               <span contentEditable="true">NAME</span>
               <div className="post" contentEditable="true">
